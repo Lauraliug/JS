@@ -16,7 +16,7 @@ function getData(data) {
 
 function getList(list) {
   let HTML = `<div class="card">${returnTop(list.autorius,list.laikas)}
-  ${returnMiddle(list.pranesimas)} ${returnFooter(list)}</div>`;
+  ${returnMiddle(list.pranesimas, list.pranesimas.paveiksliukai)} ${returnFooter(list.autorius)}</div>`;
   return HTML;
 }
 
@@ -24,12 +24,7 @@ function getList(list) {
 
 function returnTop(autorius, laikas) {
   let HTML = `<div class="card__top">
-  <img
-    src="./img/avatar/user.png"
-    alt="avataras"
-    width="50px"
-    height="50px"
-  />
+  ${getAvatar(autorius)}
   <div class="block">
     <div class="name">${autorius.vardas} ${autorius.pavarde}</div>
     <div class="time">${laikas}</div>
@@ -43,7 +38,10 @@ return HTML;
 
 function returnMiddle(pranesimas) {
   let HTML = `<div class="card__middle">
-  <textarea name="text">${pranesimas.tekstas}</textarea>
+<p>${pranesimas.tekstas}</p>
+<div class="pictures">
+${getPictures(pranesimas.paveiksliukai)}
+</div>
   <hr />
   <div class="block">
     <div class="like">
@@ -58,43 +56,77 @@ function returnMiddle(pranesimas) {
 return HTML;
 }
 
-function returnFooter() {
+function returnFooter(autorius) {
   let HTML = `<div class="card__footer">
-  <img
-    src="./img/avatar/user.png"
-    alt="avataras"
-    width="35px"
-    height="35px"
-  />
-  <form
-    class="form"
-    action=""
-    method="GET"
-    enctype="multipart/form-data"
-  >
-    <input class="input" type="text" />
-    <button class="button" type="submit"></button>
-    <div class="icon__block">
-      <div class="smile">
-        <i class="fas fa-smile"></i>
-      </div>
-      <div class="photo">
-        <i class="fas fa-camera"></i>
-      </div>
-      <div class="gif">
-        <i class="fas fa-file"></i>
-      </div>
-      <div class="sticker">
-        <i class="fas fa-sticky-note"></i>
-      </div>
-    </div>
-  </form>
-</div>`;
+  ${getAvatar(autorius)}
+              <textarea placeholder=""></textarea>
+              <div class="icon__block">
+                <div class="smile">
+                  <i class="fas fa-smile"></i>
+                </div>
+                <div class="photo">
+                  <i class="fas fa-camera"></i>
+                </div>
+                <div class="gif">
+                  <i class="fas fa-file"></i>
+                </div>
+                <div class="sticker">
+                  <i class="fas fa-sticky-note"></i>
+                </div>
+              </div>
+          </div>`;
 return HTML;
 }
 
+function getAvatar(img) {
+
+  if (img.avataras === '') {
+
+    img.avataras = 'user.png';
+    
+    }
+
+  let HTML = `<img
+  src="./img/avatar/${img.avataras}"
+  alt="avataras"
+/>`;
+
+return HTML;
+}
+
+function getPictures(img) {
+
+  let HTML = '';
+  let pictures = '';
+
+  if (img.length > 0) {
+
+    for (let i = 0; i< img.length; i++) {
+      pictures += `<img src="./img/${img[i]}" alt="pic">`
+    }
+    
+    HTML = `<div class="pictures">
+    ${pictures}
+     </div>`;
+  }
+  return HTML;
+ 
+}
+
+function getTime(time) {
+  
+}
+
+
+
+
+
+
+
 
 getData(feed);
+
+
 
 
 
