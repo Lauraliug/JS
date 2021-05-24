@@ -190,6 +190,11 @@ h6 {
   padding: 10px 15px;
 }
 
+.wrapper .main .middle .card .card__middle span {
+  font-size: 15px;
+  color: blue;
+}
+
 .wrapper .main .middle .card .card__middle .pictures {
   display: inline-block;
   width: 100%;

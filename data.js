@@ -9,7 +9,7 @@ const feed = [{
             avataras: '',
             nuoroda: '#'
         },
-        laikas: 1583832433393,
+        laikas: 15838324,
         pranesimas: {
             tekstas: 'Sveiki, as esu Tomas.',
             spalva: '',
@@ -27,7 +27,7 @@ const feed = [{
             avataras: 'user.png',
             nuoroda: '#',
         },
-        laikas: 1583832433393,
+        laikas: 1583,
         pranesimas: {
             tekstas: 'Neturiu komentaru....',
             spalva: '',
@@ -45,7 +45,7 @@ const feed = [{
             avataras: '3.png',
             nuoroda: '#',
         },
-        laikas: 1583832434388,
+        laikas: 15838,
         pranesimas: {
             tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi',
             spalva: '',
@@ -63,7 +63,7 @@ const feed = [{
             avataras: '3.png',
             nuoroda: '#',
         },
-        laikas: 1583832434388,
+        laikas: 15,
         pranesimas: {
             tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi . Ex earum tenetur odit nemo id architecto laborum iure error, . Ex earum tenetur odit nemo id architecto laborum iure error,',
             spalva: '',
@@ -81,7 +81,7 @@ const feed = [{
             avataras: '1.png',
             nuoroda: '#',
         },
-        laikas: 1583832434388,
+        laikas: 15838388,
         pranesimas: {
             tekstas: 'Labas',
             spalva: '',
@@ -99,7 +99,7 @@ const feed = [{
             avataras: 'user.png',
             nuoroda: '#',
         },
-        laikas: 1583832434388,
+        laikas: 188,
         pranesimas: {
             tekstas: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, veniam quia totam nemo, tempore delectus, illum rem necessitatibus minus maxime et odit vel explicabo ullam! Tenetur iusto velit delectus et ex numquam repellat natus, eaque esse sint iste consectetur placeat nesciunt quos vel commodi? Aliquam modi facilis nulla consequatur illum.',
             spalva: '',
@@ -117,7 +117,7 @@ const feed = [{
             avataras: '3.png',
             nuoroda: '#',
         },
-        laikas: 1583832434388,
+        laikas: 1583832,
         pranesimas: {
             tekstas: 'Labas',
             spalva: 'red',
@@ -136,7 +136,7 @@ const feed = [{
             avataras: '1.png',
             nuoroda: '#',
         },
-        laikas: 1583832434388,
+        laikas: 434388,
         pranesimas: {
             tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi . Ex earum tenetur  . Ex earum tenetur odit nemo id architecto laborum iure erro',
             spalva: '',
@@ -154,7 +154,7 @@ const feed = [{
             avataras: '3.png',
             nuoroda: '#',
         },
-        laikas: 1583832434388,
+        laikas: 1534388,
         pranesimas: {
             tekstas: 'LabasLorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi, Ex earum tenetur odit nemo id architecto laborum iure erro',
             spalva: '',
@@ -174,9 +174,9 @@ const feed = [{
             avataras: '3.png',
             nuoroda: '#',
         },
-        laikas: 1583832434388,
+        laikas: 88,
         pranesimas: {
-            tekstas: 'LabasLorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum ',
+            tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicinm ',
             spalva: 'orange',
             paveiksliukai: [
                 '1.jpeg',
@@ -196,7 +196,7 @@ const feed = [{
             avataras: '2.png',
             nuoroda: '#',
         },
-        laikas: 1583832434388,
+        laikas: 158,
         pranesimas: {
             tekstas: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum tenetur odit nemo id architecto laborum iure error, aliquid nisi',
             spalva: '',
